@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatInputModule } from '@angular/material/input';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 const i_exp = [
     MatGridListModule,
     MatCardModule,
@@ -17,15 +17,16 @@ const i_exp = [
     MatButtonModule,
     LayoutModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule
 ]
 
 @NgModule({
     imports: [
         CommonModule,
-        i_exp
+        ...i_exp
 
     ],
-    exports: [i_exp],
+    exports: [...i_exp],
 })
 export class MaterialModule { }

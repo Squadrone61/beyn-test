@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageModule } from './main-page/main-page.module';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,12 @@ import { MainPageModule } from './main-page/main-page.module';
   ],
   imports: [
     BrowserModule,
+    LayoutModule,
+    FlexLayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MainPageModule
+    MainPageModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
