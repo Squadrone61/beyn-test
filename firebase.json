@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "beyn-test",
+    "public": "dist/beyn-test",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
