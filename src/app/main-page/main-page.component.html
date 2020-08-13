@@ -2,7 +2,7 @@
   <mat-form-field class="searchForm">
     <mat-label>Github Kullanıcı Adı</mat-label>
     <input matInput type="text" [(ngModel)]="searchtext" (ngModelChange)='searchUsers()'>
-    <button mat-button *ngIf="searchtext" matSuffix mat-icon-button (click)="searchtext=''">
+    <button mat-button *ngIf="searchtext" matSuffix mat-icon-button (click)="searchtext='';searchUsers()">
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>

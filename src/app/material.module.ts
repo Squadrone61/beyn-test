@@ -9,6 +9,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 const i_exp = [
     MatGridListModule,
     MatCardModule,
@@ -18,7 +21,9 @@ const i_exp = [
     LayoutModule,
     MatToolbarModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTooltipModule,
+    MatSnackBarModule
 ]
 
 @NgModule({
