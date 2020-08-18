@@ -23,7 +23,7 @@ export class MainPageComponent implements OnInit {
   constructor(
     private fvh: FavHelperService,
     private _snackBar: MatSnackBar) {
-    this.getter = new Octokit({ auth: `ad362e27db8c1261c4b5b50874e12cf2cae1681e` });
+    this.getter = new Octokit({ auth: `b9f0212b59a2f642be958024a8445ae29b212813` });
   }
 
   ngOnInit() {
